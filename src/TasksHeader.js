@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 
-const TasksHeader = (props) => {
+const TasksHeader = () => {
   const tasks = useSelector((state) => state.todo)
   const undoneTasks = tasks.filter((t) => t.done === false);
 
